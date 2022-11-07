@@ -1,6 +1,6 @@
 {
     "name": "ie.setu.collisioncomponent",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "displayName": "collisionComponent",
     "description": "A collision Detetection Package   ",
     "unity": "2021.3"
