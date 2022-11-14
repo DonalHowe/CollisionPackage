@@ -6,7 +6,7 @@ public class movement : MonoBehaviour
 {
     
     public Rigidbody2D rb;
-    Vector2 velocity;
+   
     public float speed;
     
 
@@ -15,6 +15,11 @@ public class movement : MonoBehaviour
     {
        
        
+    }
+    public void varInit(float t_speed,Rigidbody2D t_rb)
+    {
+        rb = t_rb;
+        speed= t_speed;
     }
 
     

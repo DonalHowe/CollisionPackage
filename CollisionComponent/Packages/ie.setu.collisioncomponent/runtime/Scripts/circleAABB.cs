@@ -14,20 +14,29 @@ public class circleAABB : MonoBehaviour
 
         circleToAABBFunc();
     }
-    void circleToAABBFunc()
-    {
 
+    public void VarInitFunc(BoxCollider2D Box, CircleCollider2D circle)
+    {
+        CircleCollider = circle!;
+        object1Collider = Box;
+       
+    }
+
+    public bool circleToAABBFunc()
+    {
+        bool retunrValue=false;
         //circle to aabb collision
         float sqDistanceBetweenCenters = Vector3.Distance(object1Collider.bounds.center, CircleCollider.bounds.center);
         if (sqDistanceBetweenCenters > Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
         {
-            // this will show that they are not colliding 
+            retunrValue = false;
         }
         if (sqDistanceBetweenCenters < Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
         {
             // this shows that they are colliding
             Debug.Log("yes collision");
+            retunrValue= true;
         }
-
+        return retunrValue;
     }
 }

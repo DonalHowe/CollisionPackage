@@ -9,27 +9,18 @@ public class AABB : MonoBehaviour
 
     public Collider2D object2Collider;
     public Collider2D object1Collider;
-
-    // Start is called before the first frame update
-    void Start()
+    
+    public void VarInitFunc(GameObject g_1,GameObject g_2)
     {
-
-
+        object1 = g_1!;
+        object2 = g_2;
+        object2Collider = object2.GetComponent<Collider2D>();
+        object1Collider = object1.GetComponent<Collider2D>();
     }
-
-    
-
   
-
-   
-
-    
-
     // Update is called once per frame
     void Update()
     {
-       
-       
              // checks to see if object 1.pos.x is less than object 2+the width of object 2
         if (object1.transform.position.x < object2.transform.position.x+ object2Collider.bounds.size.x &&
             // checks to see if object 1 + width is greater than the object 2. postition . x
