@@ -7,13 +7,8 @@ public class circleAABB : MonoBehaviour
 
     public CircleCollider2D CircleCollider;
     public BoxCollider2D object1Collider;
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        circleToAABBFunc();
-    }
+    public  bool isCOlliding = false;
+  
 
     public void VarInitFunc(BoxCollider2D Box, CircleCollider2D circle)
     {
@@ -21,22 +16,28 @@ public class circleAABB : MonoBehaviour
         object1Collider = Box;
        
     }
+    
+    void Update()
+    {
+        
+        isCOlliding = circleToAABBFunc();
+    }
 
     public bool circleToAABBFunc()
     {
-        bool retunrValue=false;
+
         //circle to aabb collision
         float sqDistanceBetweenCenters = Vector3.Distance(object1Collider.bounds.center, CircleCollider.bounds.center);
-        if (sqDistanceBetweenCenters > Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
-        {
-            retunrValue = false;
-        }
+        //if (sqDistanceBetweenCenters > Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
+        //{
+        //   // if they dont collide
+        //}
         if (sqDistanceBetweenCenters < Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
         {
             // this shows that they are colliding
             Debug.Log("yes collision");
-            retunrValue= true;
+            return true;
         }
-        return retunrValue;
+        return false;
     }
 }

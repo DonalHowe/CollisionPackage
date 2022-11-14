@@ -30,7 +30,7 @@ public class AABB : MonoBehaviour
             // checks to see if object 1 position.y is greater than object 2. position + object 2 height
             object1.transform.position.y+ object1Collider.bounds.size.y > object2.transform.position.y )
         {
-            Debug.Log(" box to box collision");
+           // Debug.Log(" box to box collision");
         }
     }
 }
