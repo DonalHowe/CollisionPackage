@@ -66,37 +66,6 @@ public class collisionComponentTests
 
 
 
-    [Test]
-    public void rayCollisionTests()
-    {
-
-        GameObject rightSquare = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/rightSquare"));
-        GameObject LeftCircle = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/LeftObject"));
-        GameObject colManager = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/CollisionManager"));
-
-        Rigidbody2D RightmovmentRb = LeftCircle.GetComponent<Rigidbody2D>();
-        Rigidbody2D LeftmovmentRb = LeftCircle.GetComponent<Rigidbody2D>();
-
-        BoxCollider2D RightCollider = rightSquare.GetComponent<BoxCollider2D>();
-        CircleCollider2D leftCollider = LeftCircle.GetComponent<CircleCollider2D>();
-
-        colManager.GetComponent<circleAABB>().VarInitFunc(RightCollider, leftCollider);
-        colManager.GetComponent<AABB>().VarInitFunc(rightSquare, LeftCircle);
-
-        float speed = 0.0f;
-        float Minusspeed = 0.0f;
-
-        LeftCircle.GetComponent<movement>().varInit(speed, LeftmovmentRb);
-        rightSquare.GetComponent<movement>().varInit(Minusspeed, LeftmovmentRb);
-
-        rightSquare.transform.position = new Vector3(0, 0, 0);
-        LeftCircle.transform.position = new Vector3(0, 0, 0);
-
-        bool status = colManager.GetComponent<circleAABB>().circleToAABBFunc();
-
-        Assert.IsTrue(status);
-
-
-    }
+    
 
 }
