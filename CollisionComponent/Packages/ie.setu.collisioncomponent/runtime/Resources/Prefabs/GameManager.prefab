@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5804165943664000834
+--- !u!1 &2306948437808031121
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5804165943664000832}
-  - component: {fileID: 5804165943664000833}
-  - component: {fileID: 5440532966679740669}
-  - component: {fileID: -4775495451608040851}
+  - component: {fileID: 2306948437808031124}
+  - component: {fileID: 2306948437808031123}
+  - component: {fileID: 2306948437808031122}
+  - component: {fileID: 2306948437808031125}
+  - component: {fileID: 2306948437808031126}
   m_Layer: 0
-  m_Name: CollisionManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5804165943664000832
+--- !u!4 &2306948437808031124
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804165943664000834}
+  m_GameObject: {fileID: 2306948437808031121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,29 +35,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5804165943664000833
+--- !u!114 &2306948437808031123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804165943664000834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66e4cb73a3344e445bf4312d6a391dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CircleCollider: {fileID: 0}
-  object1Collider: {fileID: 0}
-  isCOlliding: 0
---- !u!114 &5440532966679740669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804165943664000834}
-  m_Enabled: 1
+  m_GameObject: {fileID: 2306948437808031121}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dec9b264f269f394d864ef4d5604978f, type: 3}
   m_Name: 
@@ -65,13 +51,45 @@ MonoBehaviour:
   object1: {fileID: 0}
   object2Collider: {fileID: 0}
   object1Collider: {fileID: 0}
---- !u!114 &-4775495451608040851
+--- !u!114 &2306948437808031122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804165943664000834}
+  m_GameObject: {fileID: 2306948437808031121}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e4cb73a3344e445bf4312d6a391dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CircleCollider: {fileID: 0}
+  object1Collider: {fileID: 0}
+  isCOlliding: 0
+--- !u!114 &2306948437808031125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306948437808031121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a79fff896d14344a71c57c222d4a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_aabb: {fileID: 2306948437808031123}
+  m_circleAABB: {fileID: 2306948437808031122}
+  m_circleTocircle: {fileID: 2306948437808031126}
+  m_circleColor: {fileID: 0}
+  m_squareColor: {fileID: 0}
+--- !u!114 &2306948437808031126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306948437808031121}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c2284f3eb0f3f04d833cf42ee68bdca, type: 3}
