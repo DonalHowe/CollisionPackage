@@ -25,7 +25,7 @@ public class rayToCircleBox : MonoBehaviour
     {
         if(hitDown==true)
         {
-
+            // creates the ray to be hit down 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayCastLength, ~selfCollisionLayer);
             Debug.DrawRay(transform.position, Vector2.down * rayCastLength, Color.red);
         }

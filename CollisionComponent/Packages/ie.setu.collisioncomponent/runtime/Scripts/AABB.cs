@@ -7,15 +7,15 @@ public class AABB : MonoBehaviour
     public GameObject object2;// the second object
     public GameObject object1;// the first object
 
-    public Collider2D object2Collider;
-    public Collider2D object1Collider;
+    public BoxCollider2D object2Collider;
+    public BoxCollider2D object1Collider;
     
     public void VarInitFunc(GameObject g_1,GameObject g_2)
     {
         object1 = g_1!;
         object2 = g_2;
-        object2Collider = object2.GetComponent<Collider2D>();
-        object1Collider = object1.GetComponent<Collider2D>();
+        object2Collider = object2.GetComponent<BoxCollider2D>();
+        object1Collider = object1.GetComponent<BoxCollider2D>();
     }
   
     // Update is called once per frame
