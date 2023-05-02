@@ -22,7 +22,7 @@ public class reactions : MonoBehaviour
         if (m_aabb.AAbbCollision() == true)
         {
             Debug.Log(" box to box collision");
-            m_squareColor.material.color=  Color.blue;
+            m_squareColor.material.color=  Color.yellow;
         }
         else
         {
