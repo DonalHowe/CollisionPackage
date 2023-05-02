@@ -35,7 +35,7 @@ public class circleAABB : MonoBehaviour
         if (sqDistanceBetweenCenters < Mathf.Sqrt((object1Collider.edgeRadius) + CircleCollider.radius))
         {
             // this shows that they are colliding
-            Debug.Log("yes collision");
+           // Debug.Log("circle to box collision");
             return true;
         }
         return false;

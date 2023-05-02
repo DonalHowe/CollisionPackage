@@ -6,7 +6,7 @@ public class movement : MonoBehaviour
 {
     
     public Rigidbody2D rb;
-   
+       
     public float speed;
     
 

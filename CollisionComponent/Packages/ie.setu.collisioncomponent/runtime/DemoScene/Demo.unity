@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 290959532}
   - component: {fileID: 290959531}
   - component: {fileID: 290959530}
+  - component: {fileID: 290959533}
+  - component: {fileID: 290959534}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -148,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290959529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66e4cb73a3344e445bf4312d6a391dae, type: 3}
   m_Name: 
@@ -163,7 +165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290959529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dec9b264f269f394d864ef4d5604978f, type: 3}
   m_Name: 
@@ -187,6 +189,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290959533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290959529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a79fff896d14344a71c57c222d4a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_aabb: {fileID: 290959531}
+  m_circleAABB: {fileID: 290959530}
+  m_circleTocircle: {fileID: 290959534}
+  m_circleColor: {fileID: 552890047}
+  m_squareColor: {fileID: 1371141849}
+--- !u!114 &290959534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290959529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2284f3eb0f3f04d833cf42ee68bdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_circleOneCollider: {fileID: 2093818621}
+  m_circleTwoCollider: {fileID: 552890051}
 --- !u!1 &552890046
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371141845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.85, y: -3.44, z: 0}
+  m_LocalPosition: {x: 5.85, y: -3.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

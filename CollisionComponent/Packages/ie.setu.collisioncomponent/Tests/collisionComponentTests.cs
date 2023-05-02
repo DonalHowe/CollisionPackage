@@ -22,7 +22,7 @@ public class collisionComponentTests
         rightSquare.transform.position = new Vector3(0, 0, 0);
         LefttSquare.transform.position = new Vector3(0, 0, 0);
 
-        bool output= collisionComponent.AABBCollision(rightSquare, LefttSquare, RightCollider, leftCollider);
+        bool output = colManager.GetComponent<AABB>().AAbbCollision();
 
         Assert.IsTrue(output);
 
