@@ -133,6 +133,32 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 5629159235973491223, guid: d29780f8e526d2145bae1b2bdbbff6ad, type: 3}
   m_PrefabInstance: {fileID: 5629159235443705044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &556283694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2306948437808031121, guid: a618a8e550d3d9a4ca1cfae67023dc74, type: 3}
+  m_PrefabInstance: {fileID: 2306948438096811320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &556283700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556283694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11402f57c539c3429ff343fdad492ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfCollisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  rayCastLength: 0
+  hitLeft: 0
+  hitRight: 0
+  hitUp: 0
+  hitDown: 0
+  rb2D: {fileID: 0}
 --- !u!1 &1371141845
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +746,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 2306948437808031122, guid: a618a8e550d3d9a4ca1cfae67023dc74, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306948437808031122, guid: a618a8e550d3d9a4ca1cfae67023dc74, type: 3}
       propertyPath: CircleCollider
       value: 
       objectReference: {fileID: 2093818621}
@@ -735,6 +765,10 @@ PrefabInstance:
       propertyPath: object2
       value: 
       objectReference: {fileID: 1371141845}
+    - target: {fileID: 2306948437808031123, guid: a618a8e550d3d9a4ca1cfae67023dc74, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2306948437808031123, guid: a618a8e550d3d9a4ca1cfae67023dc74, type: 3}
       propertyPath: object1Collider
       value: 
